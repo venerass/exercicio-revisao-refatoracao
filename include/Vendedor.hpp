@@ -6,7 +6,7 @@
 class Vendedor : public Empregado {
 
     public:
-        std::string nome;  	  
+        std::string nome;
 	
 	    double quotaTotalAnual();
 	
