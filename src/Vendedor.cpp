@@ -1,5 +1,7 @@
 #include "Vendedor.hpp"
 
+#define MESES_NO_ANO 12
+
 Vendedor::Vendedor(std::string _nome, double _salarioHora, double _quotaMensalVendas){
 	nome = _nome;
 	salarioHora = _salarioHora;
@@ -7,5 +9,5 @@ Vendedor::Vendedor(std::string _nome, double _salarioHora, double _quotaMensalVe
 };
 
 double Vendedor::quotaTotalAnual() {
-	return quotaMensalVendas * 12;
+	return quotaMensalVendas * MESES_NO_ANO;
 }
