@@ -13,11 +13,11 @@ class Empregado {
 
   public:
 
-    // Empregado(std::string _nome, double _salarioHora);
-    // ~Empregado(){}
+    virtual ~Empregado(){};
     double pagamentoMes(double horasTrabalhadas);
     double getSalarioHora();
     std::string getNome();
+    virtual void printSalaryInfo(double horasTrabalhadas) = 0;
 
 };
 

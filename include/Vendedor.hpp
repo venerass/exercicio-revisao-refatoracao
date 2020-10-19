@@ -13,6 +13,7 @@ class Vendedor : public Empregado {
         Vendedor(std::string _nome, double _salarioHora, double _quotaMensalVendas);
         ~Vendedor(){}
 	    double quotaTotalAnual();
+        void printSalaryInfo(double horasTrabalhadas) override;
 	
 };
 

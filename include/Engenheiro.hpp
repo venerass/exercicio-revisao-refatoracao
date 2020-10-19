@@ -13,6 +13,7 @@ class Engenheiro : public Empregado {
         Engenheiro(std::string _nome, double _salarioHora, int _projetos);
         ~Engenheiro(){}
         int getProjetos();
+        void printSalaryInfo(double horasTrabalhadas) override;
 
 };
 
