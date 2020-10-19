@@ -6,13 +6,19 @@
 
 class Empregado {
 	
-    public:
-        double salarioHora;  
-        double quotaMensalVendas;  
+  protected:
+    
+    double salarioHora;  
+    std::string nome;
 
+  public:
 
-        double pagamentoMes(double horasTrabalhadas);
-	
+    // Empregado(std::string _nome, double _salarioHora);
+    // ~Empregado(){}
+    double pagamentoMes(double horasTrabalhadas);
+    double getSalarioHora();
+    std::string getNome();
+
 };
 
 #endif

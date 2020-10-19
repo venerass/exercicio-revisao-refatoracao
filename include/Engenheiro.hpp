@@ -5,10 +5,15 @@
 
 class Engenheiro : public Empregado {
 
+    private:
+        int projetos;
+
     public:
-    std::string nome;  
-    int projetos;
-	
+
+        Engenheiro(std::string _nome, double _salarioHora, int _projetos);
+        ~Engenheiro(){}
+        int getProjetos();
+
 };
 
 #endif

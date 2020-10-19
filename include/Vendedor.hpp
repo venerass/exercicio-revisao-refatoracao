@@ -5,9 +5,13 @@
 
 class Vendedor : public Empregado {
 
+    private:
+        double quotaMensalVendas;  
+
     public:
-        std::string nome;
-	
+
+        Vendedor(std::string _nome, double _salarioHora, double _quotaMensalVendas);
+        ~Vendedor(){}
 	    double quotaTotalAnual();
 	
 };
